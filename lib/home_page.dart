@@ -25,6 +25,18 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: [
               Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 20,),
+                  child: Column(
+                    children: [
+                      Text(userInput.toString(),style: headingTextStyle3,),
+                      Text(userInput.toString(),style: headingTextStyle3,),
+                    ],
+                  ),
+                ),
+              ),
+              Expanded(
+                flex: 3,
                 child: Column(
                   children: [
                     Row(
