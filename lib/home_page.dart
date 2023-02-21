@@ -10,6 +10,22 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    print('Program Asche');
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Text('Atik Tec', style: TextStyle(fontSize: 30, color: Colors.grey,),),
+            Text('Atik Tec', style: TextStyle(fontSize: 30, color: Colors.grey,),),
+            Text('Atik Tec', style: TextStyle(fontSize: 30, color: Colors.grey,),),
+            Text('Atik Tec', style: TextStyle(fontSize: 30, color: Colors.grey,),),
+            Text('Atik Tec', style: TextStyle(fontSize: 30, color: Colors.grey,),),
+            Text('Atik Tec', style: TextStyle(fontSize: 30, color: Colors.grey,),),
+            Text('Atik Tec', style: TextStyle(fontSize: 30, color: Colors.grey,),),
+
+          ],
+        ),
+      ),
+    );
   }
 }
