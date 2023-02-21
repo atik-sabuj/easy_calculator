@@ -14,19 +14,24 @@ class _HomePageState extends State<HomePage> {
     print('Program Asche');
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: const [
-            Text('Atik Tec', style: headingTextStyle1),
-            Text('Atik Tec', style: headingTextStyle2),
-            Text('Atik Tec', style: headingTextStyle1),
-            Text('Atik Tec', style: headingTextStyle2),
-            Text('Atik Tec', style: headingTextStyle1),
-            Text('Atik Tec', style: headingTextStyle2),
-            Text('Atik Tec', style: headingTextStyle1),
-            Text('Atik Tec', style: headingTextStyle2),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 30),
+          child: Column(
+            children: [
+            /*  Text('Atik Tec', style: headingTextStyle1),
+              Text('Atik Tec', style: headingTextStyle2),*/
+              Container(
+                height: 50,
+                decoration: BoxDecoration(
+                  color: Colors.deepOrange,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Center(child: Text('Log In', style: headingTextStyle3,)),
+              ),
+              SizedBox(height: 20,),
 
-
-          ],
+            ],
+          ),
         ),
       ),
     );
