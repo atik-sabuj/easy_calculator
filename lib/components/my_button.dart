@@ -15,16 +15,19 @@ class MyButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: InkWell(
-        onTap: onPress,
-        child: Container(
-          height: 80,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: color,
-          ),
-          child: Center(
-            child: Text(title, style: headingTextStyle3,),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 12),
+        child: InkWell(
+          onTap: onPress,
+          child: Container(
+            height: 80,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: color,
+            ),
+            child: Center(
+              child: Text(title, style: headingTextStyle3,),
+            ),
           ),
         ),
       ),

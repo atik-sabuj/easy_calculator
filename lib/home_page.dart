@@ -16,22 +16,61 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    print('Program Asche');
+    print('Calculator Asche');
     return Scaffold(
+      backgroundColor: Colors.black,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             children: [
-              Row(
-                children: [
-                  MyButton(title: 'AC', onPress: (){
-                    print('tap');
-                  },),
-                  MyButton(title: '+/-',onPress: (){},),
-                  MyButton(title: '%',onPress: (){},),
-                  MyButton(title: '/',onPress: (){},color: Color(0xffffa00a),),
-                ],
+              Expanded(
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        MyButton(title: 'AC', onPress: (){
+                          print('tap');
+                        },),
+                        MyButton(title: '+/-',onPress: (){},),
+                        MyButton(title: '%',onPress: (){},),
+                        MyButton(title: '/',onPress: (){},color: Color(0xffffa00a),),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyButton(title: '7', onPress: (){},),
+                        MyButton(title: '8',onPress: (){},),
+                        MyButton(title: '9',onPress: (){},),
+                        MyButton(title: 'x',onPress: (){},color: Color(0xffffa00a),),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyButton(title: '4', onPress: (){},),
+                        MyButton(title: '5',onPress: (){},),
+                        MyButton(title: '6',onPress: (){},),
+                        MyButton(title: '-',onPress: (){},color: Color(0xffffa00a),),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyButton(title: '1', onPress: (){},),
+                        MyButton(title: '2',onPress: (){},),
+                        MyButton(title: '3',onPress: (){},),
+                        MyButton(title: '+',onPress: (){},color: Color(0xffffa00a),),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        MyButton(title: '0', onPress: (){},),
+                        MyButton(title: '.',onPress: (){},),
+                        MyButton(title: 'DEL',onPress: (){},),
+                        MyButton(title: '=',onPress: (){},color: Color(0xffffa00a),),
+                      ],
+                    ),
+                  ],
+                ),
               ),
 
             ],
