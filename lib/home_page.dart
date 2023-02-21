@@ -18,11 +18,8 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Column(
             children: [
-              MyButton(title: 'Log In',),
               MyButton(),
-              MyButton(title: 'Verification',),
-
-              //SizedBox(height: 20,),
+              MyButton(),
 
             ],
           ),
@@ -33,20 +30,18 @@ class _HomePageState extends State<HomePage> {
 }
 
 class MyButton extends StatelessWidget {
-  final String title;
-  const MyButton({Key? key, this.title = 'Emplty Blanks'}) : super(key: key);
+  const MyButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10),
-      child: Container(
-        height: 50,
-        decoration: BoxDecoration(
-          color: Colors.pink,
-          borderRadius: BorderRadius.circular(50),
-        ),
-        child: Center(child: Text(title, style: headingTextStyle3,)),
+    return Container(
+      height: 80,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: Colors.orange,
+      ),
+      child: Center(
+        child: Text('1'),
       ),
     );
   }
