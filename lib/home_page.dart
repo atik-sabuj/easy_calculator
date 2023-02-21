@@ -81,31 +81,93 @@ class _HomePageState extends State<HomePage> {
 
                           });
                         },),
-                        MyButton(title: '9',onPress: (){},),
-                        MyButton(title: 'x',onPress: (){},color: Color(0xffffa00a),),
+                        MyButton(title: '9',onPress: (){
+                          userInput += '9';
+                          setState(() {
+
+                          });
+                        },),
+                        MyButton(title: 'x',onPress: (){
+                          userInput += 'x';
+                          setState(() {
+
+                          });
+                        },color: Color(0xffffa00a),),
                       ],
                     ),
                     Row(
                       children: [
-                        MyButton(title: '4', onPress: (){},),
-                        MyButton(title: '5',onPress: (){},),
-                        MyButton(title: '6',onPress: (){},),
-                        MyButton(title: '-',onPress: (){},color: Color(0xffffa00a),),
+                        MyButton(title: '4', onPress: (){
+                          userInput += '4';
+                          setState(() {
+
+                          });
+                        },),
+                        MyButton(title: '5',onPress: (){
+                          userInput += '5';
+                          setState(() {
+
+                          });
+                        },),
+                        MyButton(title: '6',onPress: (){
+                          userInput += '6';
+                          setState(() {
+
+                          });
+                        },),
+                        MyButton(title: '-',onPress: (){
+                          userInput += '-';
+                          setState(() {
+
+                          });
+                        },color: Color(0xffffa00a),),
                       ],
                     ),
                     Row(
                       children: [
-                        MyButton(title: '1', onPress: (){},),
-                        MyButton(title: '2',onPress: (){},),
-                        MyButton(title: '3',onPress: (){},),
-                        MyButton(title: '+',onPress: (){},color: Color(0xffffa00a),),
+                        MyButton(title: '1', onPress: (){
+                          userInput += '1';
+                          setState(() {
+
+                          });
+                        },),
+                        MyButton(title: '2',onPress: (){
+                          userInput += '2';
+                          setState(() {
+
+                          });
+                        },),
+                        MyButton(title: '3',onPress: (){
+                          userInput += '3';
+                          setState(() {
+
+                          });
+                        },),
+                        MyButton(title: '+',onPress: (){
+                          userInput += '+';
+                          setState(() {
+
+                          });
+                        },color: Color(0xffffa00a),),
                       ],
                     ),
                     Row(
                       children: [
-                        MyButton(title: '0', onPress: (){},),
-                        MyButton(title: '.',onPress: (){},),
-                        MyButton(title: 'DEL',onPress: (){},),
+                        MyButton(title: '0', onPress: (){
+                          userInput += '0';
+                          setState(() {
+
+                          });
+                        },),
+                        MyButton(title: '.',onPress: (){
+                          userInput += '.';
+                          setState(() {
+
+                          });
+                        },),
+                        MyButton(title: 'DEL',onPress: (){
+
+                        },),
                         MyButton(title: '=',onPress: (){},color: Color(0xffffa00a),),
                       ],
                     ),
