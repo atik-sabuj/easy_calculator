@@ -18,11 +18,10 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Column(
             children: [
-              MyButton(),
-              MyButton(),
-              MyButton(),
-              MyButton(),
-              MyButton(),
+              MyButton(title: 'Log In', subtitle: ' Testing',),
+              MyButton(title: 'Sign Up',subtitle: ' New Form',),
+              MyButton(title: 'Verification',subtitle: ' Checking',),
+
               //SizedBox(height: 20,),
 
             ],
@@ -34,7 +33,8 @@ class _HomePageState extends State<HomePage> {
 }
 
 class MyButton extends StatelessWidget {
-  const MyButton({Key? key}) : super(key: key);
+  final String title, subtitle;
+  const MyButton({Key? key, required this.title,required this.subtitle}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +46,7 @@ class MyButton extends StatelessWidget {
           color: Colors.pink,
           borderRadius: BorderRadius.circular(50),
         ),
-        child: Center(child: Text('Log In', style: headingTextStyle3,)),
+        child: Center(child: Text(title + subtitle, style: headingTextStyle3,)),
       ),
     );
   }

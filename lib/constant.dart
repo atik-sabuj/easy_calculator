@@ -7,4 +7,4 @@ const Color whiteColor = Colors.white;
 
 const headingTextStyle1 = TextStyle(fontSize: 30, color: greyColor, fontWeight: FontWeight.w600);
 const headingTextStyle2 = TextStyle(fontSize: 30, color: blueColor, fontWeight: FontWeight.w600);
-const headingTextStyle3 = TextStyle(fontSize: 18,color: whiteColor);
+const headingTextStyle3 = TextStyle(fontSize: 18, color: whiteColor);
