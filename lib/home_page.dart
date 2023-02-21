@@ -1,3 +1,4 @@
+import 'package:easy_calculator/constant.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,13 +16,12 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Text('Atik Tec', style: TextStyle(fontSize: 30, color: Colors.grey,),),
-            Text('Atik Tec', style: TextStyle(fontSize: 30, color: Colors.grey,),),
-            Text('Atik Tec', style: TextStyle(fontSize: 30, color: Colors.grey,),),
-            Text('Atik Tec', style: TextStyle(fontSize: 30, color: Colors.grey,),),
-            Text('Atik Tec', style: TextStyle(fontSize: 30, color: Colors.grey,),),
-            Text('Atik Tec', style: TextStyle(fontSize: 30, color: Colors.grey,),),
-            Text('Atik Tec', style: TextStyle(fontSize: 30, color: Colors.grey,),),
+            Text('Atik Tec', style: TextStyle(fontSize: 30, color: greenColor),),
+            Text('Atik Tec', style: TextStyle(fontSize: 30, color: greenColor),),
+            Text('Atik Tec', style: TextStyle(fontSize: 30, color: greyColor),),
+            Text('Atik Tec', style: TextStyle(fontSize: 30, color: greenColor),),
+            Text('Atik Tec', style: TextStyle(fontSize: 30, color: greyColor),),
+            Text('Atik Tec', style: TextStyle(fontSize: 30, color: greenColor),),
 
           ],
         ),
