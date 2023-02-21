@@ -10,16 +10,29 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
+  var userInput = '';
+  var answer = '';
+
   @override
   Widget build(BuildContext context) {
     print('Program Asche');
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             children: [
-              MyButton(),
+              Row(
+                children: [
+                  MyButton(title: 'AC', onPress: (){
+                    print('tap');
+                  },),
+                  MyButton(title: '+/-',onPress: (){},),
+                  MyButton(title: '%',onPress: (){},),
+                  MyButton(title: '/',onPress: (){},color: Color(0xffffa00a),),
+                ],
+              ),
 
             ],
           ),
