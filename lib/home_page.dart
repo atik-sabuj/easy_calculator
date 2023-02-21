@@ -48,20 +48,35 @@ class _HomePageState extends State<HomePage> {
 
                           });
                         },),
-                        MyButton(title: '+/-',onPress: (){},),
-                        MyButton(title: '%',onPress: (){},),
-                        MyButton(title: '/',onPress: (){},color: Color(0xffffa00a),),
+                        MyButton(title: '+/-',onPress: (){
+                          userInput += '+/-';
+                          setState(() {
+
+                          });
+                        },),
+                        MyButton(title: '%',onPress: (){
+                          userInput += '%';
+                          setState(() {
+
+                          });
+                        },),
+                        MyButton(title: '/',onPress: (){
+                          userInput += '/';
+                          setState(() {
+
+                          });
+                        },color: Color(0xffffa00a),),
                       ],
                     ),
                     Row(
                       children: [
                         MyButton(title: '7', onPress: (){
-                          userInput = '7';
+                          userInput += '7';
                           setState(() {
                           });
                         },),
                         MyButton(title: '8',onPress: () {
-                          userInput = '8';
+                          userInput += '8';
                           setState(() {
 
                           });
