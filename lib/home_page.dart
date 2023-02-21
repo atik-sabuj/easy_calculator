@@ -1,3 +1,4 @@
+import 'package:easy_calculator/components/my_button.dart';
 import 'package:easy_calculator/constant.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,6 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: [
               MyButton(),
-              MyButton(),
 
             ],
           ),
@@ -29,21 +29,5 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-class MyButton extends StatelessWidget {
-  const MyButton({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 80,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: Colors.orange,
-      ),
-      child: Center(
-        child: Text('1'),
-      ),
-    );
-  }
-}
 
