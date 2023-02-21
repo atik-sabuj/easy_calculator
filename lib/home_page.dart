@@ -15,13 +15,16 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [
-            Text('Atik Tec', style: TextStyle(fontSize: 30, color: greenColor),),
-            Text('Atik Tec', style: TextStyle(fontSize: 30, color: greenColor),),
-            Text('Atik Tec', style: TextStyle(fontSize: 30, color: greyColor),),
-            Text('Atik Tec', style: TextStyle(fontSize: 30, color: greenColor),),
-            Text('Atik Tec', style: TextStyle(fontSize: 30, color: greyColor),),
-            Text('Atik Tec', style: TextStyle(fontSize: 30, color: greenColor),),
+          children: const [
+            Text('Atik Tec', style: headingTextStyle1),
+            Text('Atik Tec', style: headingTextStyle2),
+            Text('Atik Tec', style: headingTextStyle1),
+            Text('Atik Tec', style: headingTextStyle2),
+            Text('Atik Tec', style: headingTextStyle1),
+            Text('Atik Tec', style: headingTextStyle2),
+            Text('Atik Tec', style: headingTextStyle1),
+            Text('Atik Tec', style: headingTextStyle2),
+
 
           ],
         ),
