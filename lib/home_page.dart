@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
                   child: Column(
                     children: [
                       Text(userInput.toString(),style: headingTextStyle3,),
-                      Text(userInput.toString(),style: headingTextStyle3,),
+                      Text(answer.toString(),style: headingTextStyle3,),
                     ],
                   ),
                 ),
@@ -42,7 +42,11 @@ class _HomePageState extends State<HomePage> {
                     Row(
                       children: [
                         MyButton(title: 'AC', onPress: (){
-                          print('tap');
+                          userInput = '';
+                          answer = '';
+                          setState(() {
+
+                          });
                         },),
                         MyButton(title: '+/-',onPress: (){},),
                         MyButton(title: '%',onPress: (){},),
@@ -51,8 +55,17 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Row(
                       children: [
-                        MyButton(title: '7', onPress: (){},),
-                        MyButton(title: '8',onPress: (){},),
+                        MyButton(title: '7', onPress: (){
+                          userInput = '7';
+                          setState(() {
+                          });
+                        },),
+                        MyButton(title: '8',onPress: () {
+                          userInput = '8';
+                          setState(() {
+
+                          });
+                        },),
                         MyButton(title: '9',onPress: (){},),
                         MyButton(title: 'x',onPress: (){},color: Color(0xffffa00a),),
                       ],
