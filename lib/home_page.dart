@@ -29,8 +29,14 @@ class _HomePageState extends State<HomePage> {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 20,),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
+                      Align(
+                        alignment: Alignment.bottomRight,
+                      ),
                       Text(userInput.toString(),style: headingTextStyle3,),
+                      SizedBox(height: 15,),
                       Text(answer.toString(),style: headingTextStyle3,),
                     ],
                   ),
@@ -167,7 +173,10 @@ class _HomePageState extends State<HomePage> {
                           });
                         },),
                         MyButton(title: 'DEL',onPress: (){
+                          userInput = userInput.substring(0, userInput.length - 1);
+                          setState(() {
 
+                          });
                         },),
                         MyButton(title: '=',onPress: (){
                           equalPress();
@@ -189,8 +198,12 @@ class _HomePageState extends State<HomePage> {
   }
 
   void equalPress (){
+
+    String finalUserInput = userInput;
+    finalUserInput = userInput.replaceAll('x', '*');
+
     Parser p = Parser();
-    Expression expression = p.parse(userInput);
+    Expression expression = p.parse(finalUserInput);
     ContextModel contextModel = ContextModel();
 
     double eval = expression.evaluate(EvaluationType.REAL, contextModel);
