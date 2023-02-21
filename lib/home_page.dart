@@ -18,17 +18,12 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Column(
             children: [
-            /*  Text('Atik Tec', style: headingTextStyle1),
-              Text('Atik Tec', style: headingTextStyle2),*/
-              Container(
-                height: 50,
-                decoration: BoxDecoration(
-                  color: Colors.deepOrange,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Center(child: Text('Log In', style: headingTextStyle3,)),
-              ),
-              SizedBox(height: 20,),
+              MyButton(),
+              MyButton(),
+              MyButton(),
+              MyButton(),
+              MyButton(),
+              //SizedBox(height: 20,),
 
             ],
           ),
@@ -37,3 +32,23 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+class MyButton extends StatelessWidget {
+  const MyButton({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10),
+      child: Container(
+        height: 50,
+        decoration: BoxDecoration(
+          color: Colors.pink,
+          borderRadius: BorderRadius.circular(50),
+        ),
+        child: Center(child: Text('Log In', style: headingTextStyle3,)),
+      ),
+    );
+  }
+}
+
